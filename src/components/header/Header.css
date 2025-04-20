@@ -1,55 +1,36 @@
-/* Header Styling */
-header {
-    background-color: #2e1b5f; /* Dark purple */
-    padding: 15px 0;
-  }
-  
-  /* Logo and Tagline */
-  .coverimg-container {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  #coverimg {
-    width: 60px; /* Adjust logo size */
-  }
-  
-  .subtitle {
-    font-size: 18px;
+.coverimg-container {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(#1f1444, #5e35b1);
+    /* background-color: #3b2c72; */
+}
+
+#coverimg {
+    height: 150px;
+    padding: 10px;
+}
+
+.subtitle {
+    position: absolute;
+    top: 50%;
+    left: 30%;
     color: white;
-    margin-left: 10px;
+    width: 75%;
+    text-align: center;
+    font-size: 2.0vw;
     font-weight: bold;
-  }
-  
-  /* Custom Navbar */
-  .custom-navbar {
-    background-color: #716e94 !important; /* Lighter purple */
-    padding: 10px 0;
-  }
-  
-  .custom-navbar .navbar-brand {
-    color: white !important;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .custom-navbar .nav-link {
-    color: white !important;
-    font-weight: 500;
-    margin-right: 15px;
-  }
-  
-  .custom-navbar .nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Search Bar */
-  .searchbar input {
-    border-radius: 20px;
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    width: 200px;
-  }
-  
+}
+
+.navbar {
+    background: #5e35b1;
+}
+
+.container-fluid a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 70px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+}

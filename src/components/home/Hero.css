@@ -1,0 +1,25 @@
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 400px;
+  }
+  
+
+/*Carosel picture*/
+/* #carouselId .carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+} */
+  
+/*Header*/
+/* .headings{
+    display: flex;
+    justify-content: center;
+    color: white; 
+} */
