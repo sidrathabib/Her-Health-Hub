@@ -1,36 +1,116 @@
-body {
+/* Header section */
+.headings {
+    background-color: #5e35b1;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #5e35b1;
     margin: 0;
     padding: 0;
-} 
-.row-white-bg{
-    padding: 20px;
-    background-color: white;
-}
-
-.card {
-    background-color: #3b2c72;
-    width: 500px;
-    height: 550px;
-}
-
-.row g-4{
-    gap:10px;
-}
-
-/* Adjust spacing between topic cards */
-/* .row.g-4 {
-    row-gap: 30px;
-    column-gap: 30px;
-    margin-top: 20px;
   }
   
-  .card {
-    height: 100%;
-    border-radius: 8px;
-    background-color: #3b2c72;
+  .row-white-bg {
+    padding: 40px 0;
+    background-color: white;
+  }
+  
+  /* Mission image and column text */
+  .col-md-6 {
+    color: black;
+  }
+  
+  /* Topic card section only */
+  .topic-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .topic-card-grid .card {
+    background-color: #5e35b1;
+    color: white;
+    border-radius: 10px;
     padding: 20px;
-  } */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .topic-card-grid .card img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  .topic-card-grid .card-body h3 {
+    margin-top: 0;
+  }
+  
+  .topic-card-grid .card p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  
+  .topic-card-grid .btn-light {
+    margin-top: 15px;
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #3b2c72;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .topic-card-grid .btn-light:hover {
+    background-color: #e0d7f2;
+  }
+  
+
+  /* Ensure all cards have the same height and layout */
+.topic-card-grid .card {
+    background-color: #5e35b1;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    min-height: 500px; /* force all cards to have the same minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Force all card images to the same height */
+  .topic-card-grid .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  .topic-card-grid .card-body {
+    text-align: center;
+  }
+  
+  .topic-card-grid .btn-light {
+    margin: 15px auto 0;
+    display: block;
+  }
   
