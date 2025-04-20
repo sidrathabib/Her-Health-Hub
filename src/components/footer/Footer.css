@@ -1,0 +1,60 @@
+footer{
+    background-color: #3b2c72;
+}
+form{
+    width: 50%;
+    background-color: grey;
+}
+
+.social-media-icons img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.contact-form {
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.row{
+    padding: 100px;
+    padding-right: 15px;
+
+}
+
+form {
+    width: 75%;
+    background-color: #5e35b1;
+    color: white; 
+    padding: 25px;
+  }
+
+
+.col-md-6 {
+    color: white;
+    text-decoration: none;
+}
+
+.webLinks {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright{
+    background-color: #5e35b1;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 50px 10px 50px;
+    gap: 20px;
+
+}
+
+.copyright h2 {
+    font-size: 15px;
+    font-weight: bold;
+}

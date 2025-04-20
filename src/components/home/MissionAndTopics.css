@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #5e35b1;
+    margin: 0;
+    padding: 0;
+} 
+.row-white-bg{
+    padding: 20px;
+    background-color: white;
+}
+
+.card {
+    background-color: #3b2c72;
+    width: 500px;
+    height: 550px;
+}
+
+.row g-4{
+    gap:10px;
+}
+
+/* Adjust spacing between topic cards */
+/* .row.g-4 {
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    height: 100%;
+    border-radius: 8px;
+    background-color: #3b2c72;
+    padding: 20px;
+  } */
+  
