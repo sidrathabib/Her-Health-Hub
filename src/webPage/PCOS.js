@@ -6,8 +6,6 @@ import Footer from "../components/footer/Footer";
 const PCOS = () => {
   return (
     <div className="pcos-page">
-      <Header />
-
       <div className="banner" style={{ backgroundColor: "#6c62a8" }}>
         <h1 className="banner-title">Poly Cystic Ovary Syndrome</h1>
       </div>
@@ -255,7 +253,6 @@ const PCOS = () => {
         </div>
       </div>
 
-      <Footer />
     </div>
   );
 };
