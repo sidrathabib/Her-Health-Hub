@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Homepage from "./webPage/Homepage";
 import PCOS from "./webPage/PCOS";
-// import Endo from "./webPage/Endo";
+import Endo from "./webPage/Endo";
 import Hypo from "./webPage/Hypo";
 import AboutUs from "./webPage/AboutUs";
 import ClinicSearch from "./webPage/ClinicSearch";
@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/" element={<Header />}>
           <Route index element={<Homepage />} />
           <Route path="PCOS" element={<PCOS />} />
-          {/* <Route path="Endo" element={<Endo />} /> */}
+          <Route path="Endo" element={<Endo />} />
           <Route path="Hypo" element={<Hypo />} />
           <Route path="ClinicSearch" element={<ClinicSearch />} />
           <Route path="AboutUs" element={<AboutUs />} />

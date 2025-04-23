@@ -19,9 +19,9 @@ const Header = () => {
             {/* <a href="">Poly Cystic Ovary Syndrome</a> */}
             <Link to="/PCOS">Poly Cystic Ovary Syndrome</Link>
             {/* <a href="">Endometriosis</a> */}
-            {/* <Link to="/Endo">Endometriosis</Link> */}
+            <Link to="/Endo">Endometriosis</Link>
             {/* <a href="">Hypothyroidism</a> */}
-            <Link to="/Hypo">NHypothyroidism</Link>
+            <Link to="/Hypo">Hypothyroidism</Link>
             {/* <a href="">Search for a Clinic</a> */}
             <Link to="/ClinicSearch">Search for a Clinic</Link>
             {/* <a href="">About Us</a> */}
