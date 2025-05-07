@@ -1,70 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #8385ac;
-    margin: 0;
-    padding: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  background-color: hsl(0, 3%, 94%);
+  padding-bottom: 40px;
 }
 
-.banner-container {
-    width: 100%;
-    height: 350px; /* Adjust as needed */
-    background-color: #f0f0f0; /* Optional: Add a background color */
-  }
-  .banner-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Or object-fit: contain, etc. */
-  }
-
-h1 {
-    color: white;
-    text-decoration: none;
+.teamwork-banner-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.about{ 
-    padding: 20px;
-    background-color: white;
+.teamwork-banner-container img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover;
 }
 
+.meet-team-banner {
+  background-color: #5e35b1;
+  color: white;
+  font-size: 28px;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+/* White background section */
+.about {
+  padding: 40px 20px;
+  background-color: white;
+}
+
+/* Team cards */
 .team {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif;
-    
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 250px;
+  font-family: "Playfair Display", serif;
 }
 
 .member {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    text-align: center;
-    background-color: #2f1866;
-    color: white;
+  background-color: #6a4bb1;
+  color: white;
+  width: 350px;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .member img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .info {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .links a {
-    display: inline-block;
-    margin: 5px;
-    color: #0077b5;
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  margin: 5px;
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
 }
