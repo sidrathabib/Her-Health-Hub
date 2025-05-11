@@ -189,6 +189,25 @@ const PCOS = () => {
             </p>
           </div>
 
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+    <h2>Watch: Polycystic Ovary Syndrome Made Easy (PCOS Explained)</h2>
+    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+      <iframe
+        src="https://www.youtube.com/embed/YVQzolMgNp0"
+        title="Endometriosis Body Impact"
+        allowFullScreen
+        frameBorder="0"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }}
+      />
+    </div>
+  </div>
+
           <div className="resources">
             <h2>
               <b>Related News Articles:</b>

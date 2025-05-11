@@ -141,6 +141,26 @@ function Endo() {
           </div>
         </div>
 
+        <div className="container" style={{ textAlign: 'center', marginBottom: '60px' }}>
+  <h2>Watch:Endometriosis Explained (Signs & Symptoms, Diagnosis, Pathology, Treatment) </h2>
+  <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+    <iframe
+      src="https://www.youtube.com/embed/qDzKtyYUhas"
+      title="YouTube video"
+      allowFullScreen
+      frameBorder="0"
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%'
+      }}
+    />
+  </div>
+</div>
+
+
         {/* Current News Section */}
         <div className="resources">
           <h2>Current News & Resources</h2>
