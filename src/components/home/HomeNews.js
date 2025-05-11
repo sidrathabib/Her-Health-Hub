@@ -1,7 +1,5 @@
 import React from 'react';
-import Card from './Card';
-import './Card.css';
-
+import Card from '../components/newsCard/Card';
 
 const News = () => {
   const articles = [

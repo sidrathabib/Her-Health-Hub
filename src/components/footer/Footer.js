@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -43,13 +45,23 @@ const Footer = () => {
               <li style={{ listStyle: 'none' }}><a href="#">Hypothyroidism</a></li>
               <li style={{ listStyle: 'none' }}><a href="#">Clinic Page</a></li>
               <li style={{ listStyle: 'none' }}><a href="#">About Us</a></li> */}
+                          {/* <a href="">Poly Cystic Ovary Syndrome</a> */}
+            <Link to="/PCOS">Poly Cystic Ovary Syndrome</Link>
+            {/* <a href="">Endometriosis</a> */}
+            <Link to="/Endo">Endometriosis</Link>
+            {/* <a href="">Hypothyroidism</a> */}
+            <Link to="/Hypo">Hypothyroidism</Link>
+            {/* <a href="">Search for a Clinic</a> */}
+            <Link to="/ClinicSearch">Search for a Clinic</Link>
+            {/* <a href="">About Us</a> */}
+            <Link to="/AboutUs">About Us</Link>
             </ul>
 
             <div className="social-media-icons mt-4">
-              {/* <a href="#"><img src="./logoLN.png" alt="LinkedIn" /></a>
-              <a href="#"><img src="./logoFB.png" alt="Facebook" /></a>
-              <a href="#"><img src="./logoX.png" alt="Twitter" /></a>
-              <a href="#"><img src="./logoIG.png" alt="Instagram" /></a> */}
+              <a href="https://www.linkedin.com/school/hunter-college/posts/?feedView=all"><img src="./logoLN.png" alt="LinkedIn" /></a>
+              <a href="https://www.facebook.com/huntercollege/"><img src="./logoFB.png" alt="Facebook" /></a>
+              <a href="https://x.com/Hunter_College?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./logoX.png" alt="Twitter" /></a>
+              <a href="https://www.instagram.com/huntercollege/?hl=en"><img src="./logoIG.png" alt="Instagram" /></a>
             </div>
 
             <div>
