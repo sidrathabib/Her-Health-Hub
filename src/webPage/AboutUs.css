@@ -32,13 +32,13 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-/* White background section */
+
 .about {
   padding: 40px 20px;
   background-color: white;
 }
 
-/* Team cards */
+
 .team {
   display: flex;
   justify-content: center;
