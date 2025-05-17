@@ -22,8 +22,6 @@ const Header = () => {
             <Link to="/Endo">Endometriosis</Link>
             {/* <a href="">Hypothyroidism</a> */}
             <Link to="/Hypo">Hypothyroidism</Link>
-            {/* <a href="">Search for a Clinic</a> */}
-            <Link to="/ClinicSearch">Search for a Clinic</Link>
             {/* <a href="">About Us</a> */}
             <Link to="/AboutUs">About Us</Link>
           </div>
