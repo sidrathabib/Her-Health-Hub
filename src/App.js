@@ -6,7 +6,6 @@ import PCOS from "./webPage/PCOS";
 import Endo from "./webPage/Endo";
 import Hypo from "./webPage/Hypo";
 import AboutUs from "./webPage/AboutUs";
-import ClinicSearch from "./webPage/ClinicSearch";
 
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
@@ -30,7 +29,6 @@ const App = () => {
           <Route path="PCOS" element={<PCOS />} />
           <Route path="Endo" element={<Endo />} />
           <Route path="Hypo" element={<Hypo />} />
-          <Route path="ClinicSearch" element={<ClinicSearch />} />
           <Route path="AboutUs" element={<AboutUs />} />
           {/* <Route path="*" element={<NoMatch />} /> */}
         </Route>
