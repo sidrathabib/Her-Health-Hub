@@ -1,7 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Card from "../components/newsCard/Card";
 import "./Endo.css";
 
 function Endo() {
+  const [articleData, setarticleData] = useState(null);
+  // If you want to show loading state or error state, you can use these
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const sampleSize = (articles, n = 4) => {
+    if (!Array.isArray(articles)) return null;
+    articles = [...articles];
+    let m = articles.length;
+    while (m) {
+      const i = Math.floor(Math.random() * m--);
+      [articles[m], articles[i]] = [articles[i], articles[m]];
+    }
+    return articles.slice(0, n);
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    setError(null);
+
+    // your server address or API URL goes here
+    fetch("http://localhost:4003/api/articles")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Error in response");
+        }
+        return response.json();
+      })
+      .then((article_response) => {
+        setTimeout(() => {
+          console.log(article_response);
+          setarticleData(sampleSize(article_response.data, 4));
+          setLoading(false);
+        }, 2000);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  }, []);
+
   return (
     <>
       {/* Purple Banner */}
@@ -141,87 +183,52 @@ function Endo() {
           </div>
         </div>
 
-        <div className="container" style={{ textAlign: 'center', marginBottom: '60px' }}>
-  <h2>Watch:Endometriosis Explained (Signs & Symptoms, Diagnosis, Pathology, Treatment) </h2>
-  <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
-    <iframe
-      src="https://www.youtube.com/embed/qDzKtyYUhas"
-      title="YouTube video"
-      allowFullScreen
-      frameBorder="0"
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%'
-      }}
-    />
-  </div>
-</div>
-
+        <div
+          className="container"
+          style={{ textAlign: "center", marginBottom: "60px" }}
+        >
+          <h2>
+            Watch:Endometriosis Explained (Signs & Symptoms, Diagnosis,
+            Pathology, Treatment){" "}
+          </h2>
+          <div
+            style={{
+              position: "relative",
+              paddingBottom: "56.25%",
+              height: 0,
+              overflow: "hidden",
+            }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/qDzKtyYUhas"
+              title="YouTube video"
+              allowFullScreen
+              frameBorder="0"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </div>
+        </div>
 
         {/* Current News Section */}
         <div className="resources">
           <h2>Current News & Resources</h2>
           <div className="card-row">
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/220x160?text=Research"
-                alt="Endometriosis Research"
-              />
-              <div className="card-content">
-                <h4>Trauma & Endometriosis</h4>
-                <p>
-                  <a
-                    href="https://www.news-medical.net/news/20250210/Study-reveals-link-between-traumatic-experiences-and-endometriosis-risk.aspx"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Study reveals link between traumatic experiences and
-                    endometriosis risk
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/220x160?text=Nutrition"
-                alt="Diet and Endometriosis"
-              />
-              <div className="card-content">
-                <h4>Diet & Endometriosis</h4>
-                <p>
-                  <a
-                    href="https://www.medicalnewstoday.com/articles/higher-zinc-intake-may-increase-endometriosis-risk"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Higher zinc intake may increase endometriosis risk
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/220x160?text=Guidelines"
-                alt="Treatment Guidelines"
-              />
-              <div className="card-content">
-                <h4>Treatment Guidelines</h4>
-                <p>
-                  <a
-                    href="https://www.acog.org/womens-health/faqs/endometriosis"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    ACOG endometriosis treatment protocols
-                  </a>
-                </p>
-              </div>
-            </div>
+            {articleData &&
+              articleData.map((article) => (
+                <Card
+                  key={article.id}
+                  image={article.image_url}
+                  title={article.article_title}
+                  description={article.description}
+                  link={article.website}
+                />
+              ))}
           </div>
         </div>
       </div>

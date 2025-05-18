@@ -6,7 +6,7 @@ const Pool = require("pg").Pool;
 
 // Set up PostgreSQL connection to Heroku PostgreSQL database
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_URI,
   ssl: {
     rejectUnauthorized: false,
   },

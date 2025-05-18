@@ -3,14 +3,16 @@ require("dotenv").config();
 
 // Import Packages and Modules
 const express = require("express"); // -> https://expressjs.com
+const cors = require("cors");
 const db = require("./queries"); // Database queries
 
 // Create an instance of the express application
 const app = express();
 
 // Set the port number
-const port = 4006;
+const port = 4003;
 
+app.use(cors());
 // Allows you to use JSON with post request body
 app.use(express.json());
 
