@@ -24,7 +24,7 @@ function Endo() {
     setError(null);
 
     // your server address or API URL goes here
-    fetch("http://localhost:4003/api/articles")
+    fetch("http://localhost:4000/api/articles")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Error in response");

@@ -1,9 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Card from "../components/newsCard/Card";
 import "./PCOS.css";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
 
-const PCOS = () => {
+function PCOS() {
+  const [articleData, setarticleData] = useState(null);
+  // If you want to show loading state or error state, you can use these
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const sampleSize = (articles, n = 4) => {
+    if (!Array.isArray(articles)) return null;
+    articles = [...articles];
+    let m = articles.length;
+    while (m) {
+      const i = Math.floor(Math.random() * m--);
+      [articles[m], articles[i]] = [articles[i], articles[m]];
+    }
+    return articles.slice(0, n);
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    setError(null);
+
+    // your server address or API URL goes here
+    fetch("http://localhost:4000/api/articles")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Error in response");
+        }
+        return response.json();
+      })
+      .then((article_response) => {
+        setTimeout(() => {
+          console.log(article_response);
+          setarticleData(sampleSize(article_response.data, 4));
+          setLoading(false);
+        }, 2000);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  }, []);
   return (
     <>
       <img
@@ -189,113 +228,52 @@ const PCOS = () => {
             </p>
           </div>
 
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-    <h2>Watch: Polycystic Ovary Syndrome Made Easy (PCOS Explained)</h2>
-    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-      <iframe
-        src="https://www.youtube.com/embed/YVQzolMgNp0"
-        title="Endometriosis Body Impact"
-        allowFullScreen
-        frameBorder="0"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%'
-        }}
-      />
-    </div>
-  </div>
+          <div style={{ textAlign: "center", marginBottom: "60px" }}>
+            <h2>Watch: Polycystic Ovary Syndrome Made Easy (PCOS Explained)</h2>
+            <div
+              style={{
+                position: "relative",
+                paddingBottom: "56.25%",
+                height: 0,
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/YVQzolMgNp0"
+                title="Endometriosis Body Impact"
+                allowFullScreen
+                frameBorder="0"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </div>
+          </div>
 
           <div className="resources">
             <h2>
-              <b>Related News Articles:</b>
+              <b>Current News & Resoruces</b>
             </h2>
             <div className="card-row">
-              <div className="card">
-                <a
-                  href="https://nyulangone.org/conditions/polycystic-ovary-syndrome/treatments/medication-for-polycystic-ovary-syndrome"
-                  target="_blank"
-                  className="card-link"
-                >
-                  <div className="card">
-                    <img
-                      src="relatednews2.jpeg"
-                      alt="Anti-Androgens for PCOS Treatment"
-                    />
-                    <div className="card-content">
-                      <h4>Anti-Androgen Medications for PCOS</h4>
-                      <p>NYU Langone Health</p>
-                      <small>
-                        Overview of how anti-androgens are used to manage PCOS
-                        symptoms and hormonal imbalance.
-                      </small>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div className="card">
-                <a
-                  href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/pcos-diet"
-                  target="_blank"
-                >
-                  <img src="relatednews1.jpg" alt="PCOS Diet" />
-                  <div className="card-content">
-                    <h4>PCOS Diet</h4>
-                    <p>Johns Hopkins Medicine</p>
-                    <small>
-                      Guidelines on dietary approaches for managing PCOS.
-                    </small>
-                  </div>
-                </a>
-              </div>
-
-              <div className="card">
-                <a
-                  href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/polycystic-ovary-syndrome-pcos"
-                  target="_blank"
-                >
-                  <img
-                    src="relatednews3.jpeg"
-                    alt="Polycystic Ovary Syndrome (PCOS)"
+              {articleData &&
+                articleData.map((article) => (
+                  <Card
+                    key={article.id}
+                    image={article.image_url}
+                    title={article.article_title}
+                    description={article.description}
+                    link={article.website}
                   />
-                  <div className="card-content">
-                    <h4>Polycystic Ovary Syndrome (PCOS)</h4>
-                    <p>#PCOS #Women'sHealth</p>
-                    <small>
-                      An overview of PCOS, its symptoms, causes, and treatment
-                      options.
-                    </small>
-                  </div>
-                </a>
-              </div>
-
-              <div className="card">
-                <a
-                  href="https://www.massgeneralbrigham.org/en/about/newsroom/articles/nutrition-for-pcos"
-                  target="_blank"
-                >
-                  <img src="relatednews4.jpg" alt="Managing PCOS With Diet" />
-                  <div className="card-content">
-                    <h4>
-                      Managing PCOS With Diet: What to Eat and What to Avoid
-                    </h4>
-                    <p>#PCOS #Nutrition</p>
-                    <small>
-                      Insights on dietary choices to manage PCOS symptoms
-                      effectively.
-                    </small>
-                  </div>
-                </a>
-              </div>
+                ))}
             </div>
           </div>
         </div>
       </div>
     </>
   );
-};
+}
 
 export default PCOS;

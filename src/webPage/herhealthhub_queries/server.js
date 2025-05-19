@@ -10,7 +10,7 @@ const db = require("./queries"); // Database queries
 const app = express();
 
 // Set the port number
-const port = 4003;
+const port = 4000;
 
 app.use(cors());
 // Allows you to use JSON with post request body
