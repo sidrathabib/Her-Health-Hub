@@ -4,7 +4,18 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
-   }
+}
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 400px;
+  }
    /* Heading */
    .summary-text h2,
    .main-content h2 {

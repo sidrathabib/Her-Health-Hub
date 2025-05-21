@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div className="about-us-page">
       <div className="teamwork-banner-container">
-        <img src="womensHealth.webp" alt="teamwork" />
+        <img src="flowerBanner.jpg" alt="teamwork" />
       </div>
 
       <div className="meet-team-banner">
