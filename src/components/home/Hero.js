@@ -6,7 +6,7 @@ import "./Hero.css"
 const Hero = () => {
   return (
     <div className="banner-container">
-      <img src="../womensHealth.webp" alt="womenshealth" className="banner-image" />
+      <img src="../womensHealth.webp" alt="womenshealth" className="header-image" />
     </div>
   );
 };

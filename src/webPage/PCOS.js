@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/newsCard/Card";
-import "./PCOS.css";
+import "./PCOS.css"; 
 
 function PCOS() {
   const [articleData, setarticleData] = useState(null);
@@ -45,12 +45,10 @@ function PCOS() {
   }, []);
   return (
     <>
-      <img
-        src="/womensHealth.webp"
-        alt="Women's Health Banner"
-        className="header-image"
-      />
-      <div className="banner-pcos">
+      <div className="banner-container">
+      <img src="/anotherbanner.jpeg" alt="Women's Health Banner" className="header-image" />
+      </div>
+      <div className="headings">
         <div className="banner-title-pcos">Polycystic Ovary Syndrome</div>
       </div>
 
@@ -228,30 +226,56 @@ function PCOS() {
             </p>
           </div>
 
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2>Watch: Polycystic Ovary Syndrome Made Easy (PCOS Explained)</h2>
-            <div
-              style={{
-                position: "relative",
-                paddingBottom: "56.25%",
-                height: 0,
-              }}
-            >
-              <iframe
-                src="https://www.youtube.com/embed/YVQzolMgNp0"
-                title="Endometriosis Body Impact"
-                allowFullScreen
-                frameBorder="0"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            </div>
-          </div>
+          <div
+  style={{
+    textAlign: "center",
+    margin: "60px auto",
+    padding: "0 20px",
+    maxWidth: "900px",
+    backgroundColor: "#f9f4fc",
+    border: "1px solid #e2d4f0",
+    borderRadius: "12px",
+    boxShadow: "0 6px 18px rgba(0, 0, 0, 0.05)",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "1.8rem",
+      fontWeight: "600",
+      color: "#4b0082",
+      marginBottom: "20px",
+      paddingTop: "20px",
+    }}
+  >
+    Watch: Polycystic Ovary Syndrome Made Easy (PCOS Explained)
+  </h2>
+  <div
+    style={{
+      position: "relative",
+      paddingBottom: "56.25%",
+      height: 0,
+      borderRadius: "12px",
+      overflow: "hidden",
+      marginBottom: "20px",
+    }}
+  >
+    <iframe
+      src="https://www.youtube.com/embed/YVQzolMgNp0"
+      title="Polycystic Ovary Syndrome Explained"
+      allowFullScreen
+      frameBorder="0"
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        border: "none",
+      }}
+    ></iframe>
+  </div>
+</div>
+
 
           <div className="resources">
             <h2>
