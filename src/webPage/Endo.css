@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
@@ -8,13 +8,13 @@ body {
    /* Heading */
    .summary-text h2,
    .main-content h2 {
-    font-family: "Playfair Display", serif;
+    font-family: 'Poppins', sans-serif;
     color: #524389;
    }
    
    
    .banner-title {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
    }
    

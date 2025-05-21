@@ -47,21 +47,24 @@ function Endo() {
   return (
     <>
       {/* Purple Banner */}
-      <div className="banner">
-        <h1 className="banner-title">Endometriosis</h1>
+      <div className="banner-container">
+      <img src="/endoBan.jpg" alt="Women's Health Banner" className="header-image" />
+      </div>
+      <div className="headings">
+        <div className="banner-title-pcos">Endometriosis</div>
       </div>
 
       <div className="container">
         {/* Summary Section */}
         <div className="summary-row">
           <img
-            src="https://images.app.goo.gl/examplelink"
+            src="endo.webp"
             alt="Endometriosis illustration"
           />
           <div className="summary-text">
             <h2>What is Endometriosis?</h2>
             <p>
-              A condition where tissue similar to the lining of the uterus
+              Endometriosis is a condition where tissue similar to the lining of the uterus
               (endometrium) grows outside the uterus, causing pain,
               inflammation, and sometimes fertility issues. It can be caused by
               genetic factors, immune system disorders, or retrograde
@@ -184,36 +187,55 @@ function Endo() {
         </div>
 
         <div
-          className="container"
-          style={{ textAlign: "center", marginBottom: "60px" }}
-        >
-          <h2>
-            Watch:Endometriosis Explained (Signs & Symptoms, Diagnosis,
-            Pathology, Treatment){" "}
-          </h2>
-          <div
-            style={{
-              position: "relative",
-              paddingBottom: "56.25%",
-              height: 0,
-              overflow: "hidden",
-            }}
-          >
-            <iframe
-              src="https://www.youtube.com/embed/qDzKtyYUhas"
-              title="YouTube video"
-              allowFullScreen
-              frameBorder="0"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-              }}
-            />
-          </div>
-        </div>
+  style={{
+    textAlign: "center",
+    margin: "60px auto",
+    padding: "0 20px",
+    maxWidth: "900px",
+    backgroundColor: "#f9f4fc",
+    border: "1px solid #e2d4f0",
+    borderRadius: "12px",
+    boxShadow: "0 6px 18px rgba(0, 0, 0, 0.05)",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "1.8rem",
+      fontWeight: "600",
+      color: "#4b0082",
+      marginBottom: "20px",
+      paddingTop: "20px",
+    }}
+  >
+    Watch: Endometriosis Explained (Signs & Symptoms, Diagnosis, Pathology, Treatment)
+  </h2>
+  <div
+    style={{
+      position: "relative",
+      paddingBottom: "56.25%",
+      height: 0,
+      borderRadius: "12px",
+      overflow: "hidden",
+      marginBottom: "20px",
+    }}
+  >
+    <iframe
+      src="https://www.youtube.com/embed/qDzKtyYUhas"
+      title="Endometriosis Explained"
+      allowFullScreen
+      frameBorder="0"
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        border: "none",
+      }}
+    ></iframe>
+  </div>
+</div>
+
 
         {/* Current News Section */}
         <div className="resources">
