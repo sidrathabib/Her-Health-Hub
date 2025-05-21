@@ -1,22 +1,24 @@
 import React from "react";
 import "./AboutUs.css";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <div className="about-us-page">
-      <div className="teamwork-banner-container">
+    <div className="">
+      <div className="banner-container">
         <img src="flowerBanner.jpg" alt="teamwork" />
       </div>
 
-      <div className="meet-team-banner">
+      <div className="headings">
         <h1>Meet the Team</h1>
       </div>
+      
       <section className="about">
         <div className="team">
           {/* Sidrat */}
           <div className="member">
             <div className="member-content">
-              <img src="pics/car.jpg" alt="Sid" />
+              <img src="/sid.png" alt="Sid" />
               <div className="info">
                 <h2>Sidrat Habib</h2>
                 <p>
@@ -37,11 +39,28 @@ const AboutUs = () => {
                   project felt like the perfect opportunity to combine my two
                   interests with the help of my teammates.
                 </p>
-                <div className="links">
-                  {/* <a href="#">
-                    <img src="pics/logoLN.png" alt="LinkedIn" style={{ width: '40px', height: '40px' }} /> Add Sidrat on LinkedIn
-                  </a> */}
-                </div>
+<div className="links">
+              <a
+                href="https://www.linkedin.com/in/sidrat-habib-a62a00202/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  backgroundColor: "#ffffff",
+                  color: "#0e76a8",
+                  padding: "8px 14px",
+                  borderRadius: "20px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  marginTop: "10px",
+                  transition: "background-color 0.3s ease",
+                }}
+                onMouseOver={(e) => (e.target.style.backgroundColor = "#e6f0f8")}
+                onMouseOut={(e) => (e.target.style.backgroundColor = "#ffffff")}
+              >
+                 Connect on LinkedIn
+              </a>
+            </div>
               </div>
             </div>
           </div>
@@ -49,7 +68,7 @@ const AboutUs = () => {
           {/* Angie */}
           <div className="member">
             <div className="member-content">
-              <img src="pics/car.jpg" alt="Angie" />
+              <img src="/angie.jpeg" alt="Angie" />
               <div className="info">
                 <h2>Angie Arevalo</h2>
                 <p>
@@ -71,11 +90,28 @@ const AboutUs = () => {
                   of resources inspired me to create a page that can help other
                   women.
                 </p>
-                <div className="links">
-                  {/* <a href="#">
-                    <img src="pics/logoLN.png" alt="LinkedIn" style={{ width: '40px', height: '40px' }} /> Add Angie on LinkedIn
-                  </a> */}
-                </div>
+            <div className="links">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  backgroundColor: "#ffffff",
+                  color: "#0e76a8",
+                  padding: "8px 14px",
+                  borderRadius: "20px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  marginTop: "10px",
+                  transition: "background-color 0.3s ease",
+                }}
+                onMouseOver={(e) => (e.target.style.backgroundColor = "#e6f0f8")}
+                onMouseOut={(e) => (e.target.style.backgroundColor = "#ffffff")}
+              >
+                 Connect on LinkedIn
+              </a>
+            </div>
               </div>
             </div>
           </div>
@@ -83,7 +119,7 @@ const AboutUs = () => {
           {/* Shana */}
           <div className="member">
             <div className="member-content">
-              <img src="pics/car.jpg" alt="Shana" />
+              <img src="/shana.JPEG" alt="Shana" />
               <div className="info">
                 <h2>Shana Panicker</h2>
                 <p>
@@ -102,11 +138,33 @@ const AboutUs = () => {
                   <b>A note from Shana:</b> My personal reproductive issues
                   inspired me to be involved in this project.
                 </p>
-                <div className="links">
-                  {/* <a href="#">
-                    <img src="pics/logoLN.png" alt="LinkedIn" style={{ width: '40px', height: '40px' }} /> Add Shana on LinkedIn
-                  </a> */}
-                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            <div className="links">
+              <a
+                href="https://www.linkedin.com/in/shanapanicker/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  backgroundColor: "#ffffff",
+                  color: "#0e76a8",
+                  padding: "8px 14px",
+                  borderRadius: "20px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  marginTop: "10px",
+                  transition: "background-color 0.3s ease",
+                }}
+                onMouseOver={(e) => (e.target.style.backgroundColor = "#e6f0f8")}
+                onMouseOut={(e) => (e.target.style.backgroundColor = "#ffffff")}
+              >
+                 Connect on LinkedIn
+              </a>
+            </div>
               </div>
             </div>
           </div>
