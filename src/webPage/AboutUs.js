@@ -12,7 +12,7 @@ const AboutUs = () => {
       <div className="headings">
         <h1>Meet the Team</h1>
       </div>
-      
+
       <section className="about">
         <div className="team">
           {/* Sidrat */}
@@ -39,28 +39,32 @@ const AboutUs = () => {
                   project felt like the perfect opportunity to combine my two
                   interests with the help of my teammates.
                 </p>
-<div className="links">
-              <a
-                href="https://www.linkedin.com/in/sidrat-habib-a62a00202/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  backgroundColor: "#ffffff",
-                  color: "#0e76a8",
-                  padding: "8px 14px",
-                  borderRadius: "20px",
-                  fontWeight: "600",
-                  textDecoration: "none",
-                  marginTop: "10px",
-                  transition: "background-color 0.3s ease",
-                }}
-                onMouseOver={(e) => (e.target.style.backgroundColor = "#e6f0f8")}
-                onMouseOut={(e) => (e.target.style.backgroundColor = "#ffffff")}
-              >
-                 Connect on LinkedIn
-              </a>
-            </div>
+                <div className="links">
+                  <a
+                    href="https://www.linkedin.com/in/sidrat-habib-a62a00202/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      backgroundColor: "#ffffff",
+                      color: "#0e76a8",
+                      padding: "8px 14px",
+                      borderRadius: "20px",
+                      fontWeight: "600",
+                      textDecoration: "none",
+                      marginTop: "10px",
+                      transition: "background-color 0.3s ease",
+                    }}
+                    onMouseOver={(e) =>
+                      (e.target.style.backgroundColor = "#e6f0f8")
+                    }
+                    onMouseOut={(e) =>
+                      (e.target.style.backgroundColor = "#ffffff")
+                    }
+                  >
+                    Connect on LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -75,7 +79,7 @@ const AboutUs = () => {
                   <b>Graduating Class of 2025</b>
                 </p>
                 <p>
-                  <b>Major and Minor:</b> Sociology and Computer Science
+                  <b>Major and Minor:</b> Psychology and Computer Science
                 </p>
                 <p>
                   <b>Contributions:</b> Angie has been able to help with the
@@ -90,28 +94,32 @@ const AboutUs = () => {
                   of resources inspired me to create a page that can help other
                   women.
                 </p>
-            <div className="links">
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  backgroundColor: "#ffffff",
-                  color: "#0e76a8",
-                  padding: "8px 14px",
-                  borderRadius: "20px",
-                  fontWeight: "600",
-                  textDecoration: "none",
-                  marginTop: "10px",
-                  transition: "background-color 0.3s ease",
-                }}
-                onMouseOver={(e) => (e.target.style.backgroundColor = "#e6f0f8")}
-                onMouseOut={(e) => (e.target.style.backgroundColor = "#ffffff")}
-              >
-                 Connect on LinkedIn
-              </a>
-            </div>
+                <div className="links">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      backgroundColor: "#ffffff",
+                      color: "#0e76a8",
+                      padding: "8px 14px",
+                      borderRadius: "20px",
+                      fontWeight: "600",
+                      textDecoration: "none",
+                      marginTop: "10px",
+                      transition: "background-color 0.3s ease",
+                    }}
+                    onMouseOver={(e) =>
+                      (e.target.style.backgroundColor = "#e6f0f8")
+                    }
+                    onMouseOut={(e) =>
+                      (e.target.style.backgroundColor = "#ffffff")
+                    }
+                  >
+                    Connect on LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -143,28 +151,32 @@ const AboutUs = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-            <div className="links">
-              <a
-                href="https://www.linkedin.com/in/shanapanicker/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  backgroundColor: "#ffffff",
-                  color: "#0e76a8",
-                  padding: "8px 14px",
-                  borderRadius: "20px",
-                  fontWeight: "600",
-                  textDecoration: "none",
-                  marginTop: "10px",
-                  transition: "background-color 0.3s ease",
-                }}
-                onMouseOver={(e) => (e.target.style.backgroundColor = "#e6f0f8")}
-                onMouseOut={(e) => (e.target.style.backgroundColor = "#ffffff")}
-              >
-                 Connect on LinkedIn
-              </a>
-            </div>
+                <div className="links">
+                  <a
+                    href="https://www.linkedin.com/in/shanapanicker/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      backgroundColor: "#ffffff",
+                      color: "#0e76a8",
+                      padding: "8px 14px",
+                      borderRadius: "20px",
+                      fontWeight: "600",
+                      textDecoration: "none",
+                      marginTop: "10px",
+                      transition: "background-color 0.3s ease",
+                    }}
+                    onMouseOver={(e) =>
+                      (e.target.style.backgroundColor = "#e6f0f8")
+                    }
+                    onMouseOut={(e) =>
+                      (e.target.style.backgroundColor = "#ffffff")
+                    }
+                  >
+                    Connect on LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>
